@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import createSagaMiddleware from "redux-saga"
 import jokeSlice from "./jokeSlice";
-import watchJokes from "./jokeSaga";
+import { watchJokes } from "./jokeSlice";
 
 const sagaMiddleware = createSagaMiddleware();
 

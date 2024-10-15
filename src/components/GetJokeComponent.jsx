@@ -7,6 +7,8 @@ const GetJoke = ({ jokeId }) => {
   const dispatch = useDispatch();
   const { data, loading, error, status } = useSelector((state) => state.jokes);
 
+  console.log(data, status);
+  
   useEffect(() => {
     dispatch(fetchJokes());
   }, [jokeId, dispatch]);
